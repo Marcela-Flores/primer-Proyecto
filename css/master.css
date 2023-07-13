@@ -1,0 +1,78 @@
+/**===Aplicando css global===*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+/*===Aplicando css al encabezado===*/
+#logo{
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+}
+#menu{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+
+
+
+
+/*===Aplicando comportamiento responsive===*/
+/*===// Medium devices (tablets, 768px and up)===*/
+/*===Trabajando con css grid===*/
+
+@media (min-width: 768px) {
+    /*===Aplicando css al encabezado===*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 2fr ; /*===Medidas: px em rem % fr*/
+        align-items: center;
+        
+    }
+    #menu{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #opcionesIzquierdo{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    #opcionesDerecho{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*=== Aplicando css a la seccion producto===*/
+    #productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /*===Aplicando css a la galeria===*/
+    #galeria{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+    }
+
+ }
+
+ /*===X-Large devices (large desktops, 1200px and up)===*/
+
+ @media (min-width: 1200px) {
+    #galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    
+ }
+ }
