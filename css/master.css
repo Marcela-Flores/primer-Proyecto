@@ -5,6 +5,9 @@
     padding: 0;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 img{
     width: 100%;
 }
@@ -63,6 +66,25 @@ h1{
         gap: 10px;
 
     }
+    /*==Aplicando css al footer==*/
+    #piePagina{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 0.5fr;
+        justify-items: center;
+        align-items: center;
+        background-color: blue;
+        color: black;
+    }
+    #redesSociales{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    ion-icon{
+        color: blanchedalmond;
+        font-size: 2rem;
+    }
+    
 
  }
 
